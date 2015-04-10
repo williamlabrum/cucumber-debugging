@@ -13,4 +13,11 @@ public class BeforeStepDefs {
         }
     }
     
+    @Before("@myTag2")
+    public void before2(Scenario scenario){
+        for(String tag : scenario.getSourceTagNames()){
+            System.out.print("Tag: " + tag);
+        }
+    }
+    
 }

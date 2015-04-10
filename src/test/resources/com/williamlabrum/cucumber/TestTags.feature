@@ -9,3 +9,14 @@ Feature: Test Example Tags
     Examples:
     | column    |
     | some data |
+    
+    @myTag2
+    Scenario Outline: Test Tags in Example Blocks
+        Given some "<data>"
+        When bar
+        Then fizz
+            
+    Examples:
+    | column    |
+    | some data |
+    
