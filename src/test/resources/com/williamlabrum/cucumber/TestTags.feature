@@ -1,7 +1,7 @@
 Feature: Test Example Tags
     
     Scenario Outline: Test Tags in Example Blocks
-        Given some "<data>"
+        Given some "<column>"
         When bar
         Then fizz
     
@@ -12,7 +12,7 @@ Feature: Test Example Tags
     
     @myTag2
     Scenario Outline: Test Tags in Example Blocks
-        Given some "<data>"
+        Given some "<column>"
         When bar
         Then fizz
             
